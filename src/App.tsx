@@ -6,11 +6,11 @@ import { Portfolio } from "./components/pages/Portfolio";
 
 function App() {
   return (
-    <HashRouter basename={import.meta.env.DEV ? "/" : "/portfolio"}>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/skill" element={<Skill />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="skill" element={<Skill />} />
+        <Route path="portfolio" element={<Portfolio />} />
       </Routes>
     </HashRouter>
   );

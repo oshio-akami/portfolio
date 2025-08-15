@@ -1,5 +1,6 @@
 import { useInView } from "@/hooks/useInView";
 import Skill from "../ui/Skill";
+import { SkillCriteria } from "../ui/SkillCriteria";
 
 export function Skills() {
   const { ref, inView } = useInView<HTMLDivElement>();
@@ -10,12 +11,7 @@ export function Skills() {
         <span className="icon-[mdi--lightbulb-on] size-10 text-heading"></span>
         <h1 className="text-4xl font-bold text-heading leading-none">Skills</h1>
       </div>
-      <p className="font-bold">
-        1. 触った事がある。 2.使い方を大雑把に学んだ。
-        3.基本的な使い方にまだ漏れがあるが使用可能。 4. 基本的な使い方を把握。
-        5. 問題無く使用可能。
-      </p>
-      <div ref={ref} className="grid grid-cols-3 xl:grid-cols-4 gap-15 mb-10">
+      <div ref={ref} className="grid grid-cols-4 gap-15 mb-10">
         <Skill
           className="basis-1/3"
           rating={4}
@@ -65,6 +61,25 @@ export function Skills() {
           inView={inView}
           strokeColor="#f05032" // Gitのオレンジレッド
         />
+      </div>
+      <div className="flex flex-col gap-2">
+        <SkillCriteria num={1}>
+          <p className="font-bold">触った事がある。</p>
+        </SkillCriteria>
+        <SkillCriteria num={2}>
+          <p className="font-bold">使い方を大雑把に学んだ。</p>
+        </SkillCriteria>
+        <SkillCriteria num={3}>
+          <p className="font-bold">
+            基本的な使い方にまだ漏れがあるが使用可能。
+          </p>
+        </SkillCriteria>
+        <SkillCriteria num={4}>
+          <p className="font-bold">基本的な使い方を把握。</p>
+        </SkillCriteria>
+        <SkillCriteria num={5}>
+          <p className="font-bold">問題無く使用可能。</p>
+        </SkillCriteria>
       </div>
     </div>
   );

@@ -12,11 +12,17 @@ type Props = {
 };
 
 export function PortfolioCard(props: Props) {
-  const badges = props.tags.map((tag) => (
-    <Badge className="bg-bg text-[1rem] text-highlight">{tag}</Badge>
+  const badges = props.tags.map((tag, index) => (
+    <Badge key={index} className="bg-bg text-[1rem] text-highlight">
+      {tag}
+    </Badge>
   ));
-  const githubLinks = props.github.map((github) => (
-    <Link className="flex text-heading hover:underline " to={github.link}>
+  const githubLinks = props.github.map((github, index) => (
+    <Link
+      key={index}
+      className="flex text-heading hover:underline "
+      to={github.link}
+    >
       <span className="icon-[mdi--github] mt-1.5"></span>
       <p>{github.name}</p>
     </Link>

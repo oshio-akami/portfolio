@@ -11,7 +11,7 @@ export function Portfolios() {
             Portfolio
           </h1>
         </div>
-        <div className="m-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="m-auto grid grid-cols-1 md:grid-cols-2  2xl:grid-cols-3 gap-10">
           <FadeIn>
             <PortfolioCard
               image="/portfolio/committee-homepage.jpg"
@@ -51,10 +51,10 @@ export function Portfolios() {
                 "Next.js",
                 "Type Script",
                 "swr",
+                "Story Book",
                 "Hono",
                 "drizzle",
                 "Cloudflare Pages",
-                "d1",
                 "r2",
                 "postgresql",
               ]}

@@ -28,8 +28,8 @@ export function PortfolioCard(props: Props) {
     </Link>
   ));
   return (
-    <Card className="w-full min-h-[580px] p-0 transition-transform duration-300 hover:scale-105">
-      <Link to={props.link}>
+    <Card className="w-full min-h-[600px] p-0 transition-transform duration-300 hover:scale-105">
+      <Link to={props.link} className="border-b-2">
         <img
           src={props.image}
           alt="image"

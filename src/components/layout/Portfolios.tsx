@@ -14,18 +14,16 @@ export function Portfolios() {
         <div className="m-auto grid grid-cols-1 md:grid-cols-2  2xl:grid-cols-3 gap-10">
           <FadeIn>
             <PortfolioCard
-              image="/portfolio/committee-homepage.jpg"
+              image="/portfolio/committee-homepage.webp"
               title="委員会ホームページ(模擬サイト)"
-              description={`通所していた事業所の委員会ホームページの模擬サイトです。`}
+              description={`通所していた事業所の委員会ホームページの模擬サイトです。\nスタッフから提示された要件を元に作成しました。`}
               link="https://committee-homepage.pages.dev/"
               tags={[
                 "Vue.js",
                 "Type Script",
                 "Hono",
-                "drizzle",
                 "Cloudflare Pages",
                 "Cloudflare Workers",
-                "sqlite",
                 "d1",
                 "r2",
               ]}
@@ -43,17 +41,15 @@ export function Portfolios() {
           </FadeIn>
           <FadeIn>
             <PortfolioCard
-              image="/portfolio/group-app.jpg"
+              image="/portfolio/group-app.webp"
               title="NoteLink(グループ制記事共有アプリ)"
               description={`NoteLinkは、招待制のグループ内で記事を投稿・共有できるWebアプリです。`}
-              link="https://project-management-tool-8fs.pages.dev/"
+              link="https://notelink.pages.dev/"
               tags={[
                 "Next.js",
                 "Type Script",
-                "swr",
                 "Story Book",
                 "Hono",
-                "drizzle",
                 "Cloudflare Pages",
                 "r2",
                 "postgresql",
@@ -68,15 +64,17 @@ export function Portfolios() {
           </FadeIn>
           <FadeIn>
             <PortfolioCard
-              image="/portfolio/committee-homepage.jpg"
-              title="仮の三件目"
-              description="ここに説明"
-              link="https://project-management-tool-8fs.pages.dev/"
-              tags={["Next.js", "Type Script", "Hono", "Cloudflare"]}
+              image="/portfolio/typing-app.webp"
+              title="入力作業訓練サイト"
+              description={
+                "見本に張り付けた文章を利用する入力練習サイトです。\nミスや入力漏れは終了後に表示されるため、訓練としての入力・セルフチェック・集中力向上に役立ちます。"
+              }
+              link="https://oshio-akami.github.io/typing-site/"
+              tags={["React"]}
               github={[
                 {
                   name: "github",
-                  link: "https://github.com/oshio-akami/notelink-app",
+                  link: "https://github.com/oshio-akami/typing-site/",
                 },
               ]}
             />

@@ -64,7 +64,7 @@ export function Portfolios() {
           </FadeIn>
           <FadeIn>
             <PortfolioCard
-              image="/portfolio/typing-app.webp"
+              image="/portfolio/typing-site.webp"
               title="入力作業訓練サイト"
               description={
                 "見本に張り付けた文章を利用する入力練習サイトです。\nミスや入力漏れは終了後に表示されるため、訓練としての入力・セルフチェック・集中力向上に役立ちます。"

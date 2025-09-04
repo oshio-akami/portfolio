@@ -18,24 +18,24 @@ export function PortfolioCard(props: Props) {
     </Badge>
   ));
   const githubLinks = props.github.map((github, index) => (
-    <Link
+    <a
       key={index}
       className="flex text-heading hover:underline "
-      to={github.link}
+      href={github.link}
     >
       <span className="icon-[mdi--github] mt-1.5"></span>
       <p>{github.name}</p>
-    </Link>
+    </a>
   ));
   return (
     <Card className="w-full min-h-[600px] p-0 transition-transform duration-300 hover:scale-105">
-      <Link to={props.link} className="border-b-2">
+      <a href={props.link} className="border-b-2">
         <img
           src={props.image}
           alt="image"
           className="w-full h-[250px] object-cover rounded-t-lg  cursor-pointer hover:brightness-90"
         />
-      </Link>
+      </a>
       <CardHeader>
         <h2 className="text-xl text-center text-heading font-semibold">
           {props.title}
@@ -45,13 +45,13 @@ export function PortfolioCard(props: Props) {
         <p className="whitespace-pre-wrap">{props.description}</p>
         <div className="flex gap-2 flex-wrap">{badges}</div>
         <div className="flex gap-4 flex-wrap">
-          <Link
+          <a
             className="flex items-center text-heading hover:underline"
-            to={props.link}
+            href={props.link}
           >
             <span className="icon-[mdi--external-link] mt-1"></span>
             <p>サイト</p>
-          </Link>
+          </a>
           {githubLinks}
         </div>
       </CardContent>

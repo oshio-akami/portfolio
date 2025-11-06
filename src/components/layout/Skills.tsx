@@ -35,7 +35,7 @@ export function Skills() {
         />
         <Skill
           className="basis-1/3"
-          rating={3}
+          rating={4}
           text="React"
           inView={inView}
           strokeColor="#61dafb" // Reactシアンブルー

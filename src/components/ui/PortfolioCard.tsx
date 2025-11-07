@@ -20,6 +20,8 @@ export function PortfolioCard(props: Props) {
     <a
       key={index}
       className="flex text-heading hover:underline "
+      target="_blank"
+      rel="noopener noreferrer"
       href={github.link}
     >
       <span className="icon-[mdi--github] mt-1.5"></span>
@@ -28,7 +30,12 @@ export function PortfolioCard(props: Props) {
   ));
   return (
     <Card className="w-full min-h-[600px] p-0 transition-transform duration-300 hover:scale-105">
-      <a href={props.link} className="border-b-2">
+      <a
+        href={props.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="border-b-2"
+      >
         <img
           src={props.image}
           alt="image"
@@ -46,6 +53,8 @@ export function PortfolioCard(props: Props) {
         <div className="flex gap-4 flex-wrap">
           <a
             className="flex items-center text-heading hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
             href={props.link}
           >
             <span className="icon-[mdi--external-link] mt-1"></span>

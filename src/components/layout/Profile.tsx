@@ -17,6 +17,8 @@ export function Profile() {
           </p>
           <Link
             to="https://github.com/oshio-akami"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex gap-2 items-center text-2xl leading-none mt-5 hover:underline"
           >
             <span className="icon-[mdi--github]"></span>
